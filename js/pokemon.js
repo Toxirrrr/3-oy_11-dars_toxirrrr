@@ -3485,41 +3485,41 @@ let elList = document.querySelector(".list");
 
 function render(array) {
     
-    // for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
 
-	// 	let newP1 = document.createElement("p")
-	// 	let newH3 = document.createElement("h3")
-	// 	let newImg = document.createElement("img")
-	// 	let newP = document.createElement("p")
-	// 	let newType = document.createElement("p")
-	// 	let newLi = document.createElement("li")
+		let newP1 = document.createElement("p")
+		let newH3 = document.createElement("h3")
+		let newImg = document.createElement("img")
+		let newP = document.createElement("p")
+		let newType = document.createElement("p")
+		let newLi = document.createElement("li")
 
-	// 	let nameH3 = array[i]["name"]
-	// 	let weightP = array[i]["weight"]
-	// 	let heightP = array[i]["height"]
-	// 	let type = array[i]["type"]
-	// 	let imgSrc = array[i]["img"]
+		let nameH3 = array[i]["name"]
+		let weightP = array[i]["weight"]
+		let heightP = array[i]["height"]
+		let type = array[i]["type"]
+		let imgSrc = array[i]["img"]
 
-	// 	for (let j = 0; j < 1; j++) {
-	// 		elList.appendChild(newLi);
-	// 		newLi.classList.add("item","d-flex","flex-column","col-4","text-center","align-items-center","bg-light","rounded-5","w-25","shadow-lg","border-2,:hover");
-	// 		newLi.appendChild(newImg);
-	// 		newImg.src = imgSrc;
-	// 		newLi.appendChild(newH3);
-	// 		newH3.textContent = nameH3;
-	// 		newH3.classList.add("heading");
-	// 		newLi.appendChild(newType);
-	// 		newType.textContent = type;
-	// 		newType.classList.add("heading");
-	// 		newLi.appendChild(newP);
-	// 		newP.textContent = weightP;
-	// 		newP.classList.add("heading" , "mb-1");
-	// 		newLi.appendChild(newP1);
-	// 		newP1.textContent = heightP;
-	// 		newP1.classList.add("heading")
-	// 	}
+		for (let j = 0; j < 1; j++) {
+			elList.appendChild(newLi);
+			newLi.classList.add("item","d-flex","flex-column","col-4","text-center","align-items-center","bg-light","rounded-5","w-25","shadow-lg","border-2,:hover");
+			newLi.appendChild(newImg);
+			newImg.src = imgSrc;
+			newLi.appendChild(newH3);
+			newH3.textContent = nameH3;
+			newH3.classList.add("heading");
+			newLi.appendChild(newType);
+			newType.textContent = type;
+			newType.classList.add("heading");
+			newLi.appendChild(newP);
+			newP.textContent = weightP;
+			newP.classList.add("heading" , "mb-1");
+			newLi.appendChild(newP1);
+			newP1.textContent = heightP;
+			newP1.classList.add("heading")
+		}
 
-    // }
+    }
 }
 
 render(splicedArray)
